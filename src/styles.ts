@@ -8,6 +8,11 @@ export const cores = {
   cinzaClaro: '#A3A3A3'
 }
 
+export const breakpoints = {
+  tablet: '768px',
+  desktop: '1024px'
+}
+
 const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
@@ -28,6 +33,13 @@ export const Container = styled.div`
   max-width: 1024px;
   margin: 0 auto;
   width: 100%;
+
+  @media (max-width: ${breakpoints.desktop}) {
+    max-width: 80%;
+  }
+  @media (max-width: ${breakpoints.tablet}) {
+    max-width: 90%;
+  }
 `
 
 export default GlobalStyle
