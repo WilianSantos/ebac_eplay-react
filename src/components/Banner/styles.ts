@@ -1,17 +1,16 @@
 import styled from 'styled-components'
-import { Container } from '../../styles'
 import { TagContainer } from '../Tag/styles'
 
-export const Imagem = styled.div`
-  height: 560px;
+export const Image = styled.div`
   width: 100%;
-  background-size: cover;
-  background-reapet: no-repeat;
+  height: 560px;
   display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
   font-weight: bold;
   position: relative;
 
-  ${Container} {
+  .container {
     position: relative;
     padding-top: 340px;
     display: flex;
@@ -29,19 +28,19 @@ export const Imagem = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    content: '';
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
+    content: '';
   }
 `
 
-export const Titulo = styled.h2`
+export const Title = styled.h2`
   font-size: 36px;
   max-width: 450px;
 `
 
-export const Precos = styled.p`
+export const Prices = styled.p`
   font-size: 24px;
   margin-top: 24px;
 
